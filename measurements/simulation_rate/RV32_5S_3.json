@@ -1,0 +1,11 @@
+{
+    "# instructions retired": 8388868,
+    "cycles": 12583176,
+    "execution time (ms)": 31495,
+    "runinfo": {
+        "ISA extensions": [
+        ],
+        "processor": "RV32_5S",
+        "source file": "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\tests\\simulation_rate.s"
+    }
+}

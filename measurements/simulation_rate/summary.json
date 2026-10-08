@@ -1,0 +1,169 @@
+{
+  "ripes": "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+  "ripes_sha256": "bd2ddea8cd6fcf6902cda7366fe99ab6dd0c7fdbbc7efcfdb89ede20acc67f0f",
+  "source_sha256": "e7246adb6ecdd8ad24fffac274d441b1d57c3dfea1d628b8091be0986341b9a2",
+  "models": {
+    "RV32_ISS": {
+      "runs": [
+        {
+          "iret": 8388868,
+          "milliseconds": 559,
+          "instructions_per_second": 15006919.499105545,
+          "command": [
+            "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+            "--mode",
+            "cli",
+            "--src",
+            "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\tests\\simulation_rate.s",
+            "-t",
+            "asm",
+            "--proc",
+            "RV32_ISS",
+            "--iret",
+            "--exectime",
+            "--cycles",
+            "--runinfo",
+            "--json",
+            "--timeout",
+            "180000",
+            "--output",
+            "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\simulation_rate\\RV32_ISS_1.json"
+          ]
+        },
+        {
+          "iret": 8388868,
+          "milliseconds": 552,
+          "instructions_per_second": 15197224.63768116,
+          "command": [
+            "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+            "--mode",
+            "cli",
+            "--src",
+            "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\tests\\simulation_rate.s",
+            "-t",
+            "asm",
+            "--proc",
+            "RV32_ISS",
+            "--iret",
+            "--exectime",
+            "--cycles",
+            "--runinfo",
+            "--json",
+            "--timeout",
+            "180000",
+            "--output",
+            "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\simulation_rate\\RV32_ISS_2.json"
+          ]
+        },
+        {
+          "iret": 8388868,
+          "milliseconds": 677,
+          "instructions_per_second": 12391237.813884785,
+          "command": [
+            "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+            "--mode",
+            "cli",
+            "--src",
+            "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\tests\\simulation_rate.s",
+            "-t",
+            "asm",
+            "--proc",
+            "RV32_ISS",
+            "--iret",
+            "--exectime",
+            "--cycles",
+            "--runinfo",
+            "--json",
+            "--timeout",
+            "180000",
+            "--output",
+            "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\simulation_rate\\RV32_ISS_3.json"
+          ]
+        }
+      ],
+      "median_instructions_per_second": 15006919.499105545
+    },
+    "RV32_5S": {
+      "runs": [
+        {
+          "iret": 8388868,
+          "milliseconds": 60084,
+          "instructions_per_second": 139619.00006657347,
+          "command": [
+            "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+            "--mode",
+            "cli",
+            "--src",
+            "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\tests\\simulation_rate.s",
+            "-t",
+            "asm",
+            "--proc",
+            "RV32_5S",
+            "--iret",
+            "--exectime",
+            "--cycles",
+            "--runinfo",
+            "--json",
+            "--timeout",
+            "180000",
+            "--output",
+            "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\simulation_rate\\RV32_5S_1.json"
+          ]
+        },
+        {
+          "iret": 8388868,
+          "milliseconds": 103705,
+          "instructions_per_second": 80891.6445687286,
+          "command": [
+            "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+            "--mode",
+            "cli",
+            "--src",
+            "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\tests\\simulation_rate.s",
+            "-t",
+            "asm",
+            "--proc",
+            "RV32_5S",
+            "--iret",
+            "--exectime",
+            "--cycles",
+            "--runinfo",
+            "--json",
+            "--timeout",
+            "180000",
+            "--output",
+            "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\simulation_rate\\RV32_5S_2.json"
+          ]
+        },
+        {
+          "iret": 8388868,
+          "milliseconds": 31495,
+          "instructions_per_second": 266355.54849976185,
+          "command": [
+            "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+            "--mode",
+            "cli",
+            "--src",
+            "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\tests\\simulation_rate.s",
+            "-t",
+            "asm",
+            "--proc",
+            "RV32_5S",
+            "--iret",
+            "--exectime",
+            "--cycles",
+            "--runinfo",
+            "--json",
+            "--timeout",
+            "180000",
+            "--output",
+            "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\simulation_rate\\RV32_5S_3.json"
+          ]
+        }
+      ],
+      "median_instructions_per_second": 139619.00006657347
+    }
+  },
+  "platform": "Windows-10-10.0.26100-SP0",
+  "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel"
+}
