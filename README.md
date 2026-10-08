@@ -12,10 +12,12 @@ The historical upstream explanation below describes that original baseline.
 - Measurement evidence: [measurements/](measurements/).
 - English assignment note: [HackMD](https://hackmd.io/@EdisonTsai/Byf8nleqzl).
 
-The measured version has no LED renderer. LED visualization and confirmation
-or replacement of the xPack compiler reference remain outstanding; this push
-is a progress snapshot, not a declaration that every assignment requirement
-has been completed. No final submission tag has been created for it.
+The measured build disables the LED renderer. A GUI renderer and actual-path
+animation are implemented; see [LED setup and validation](LED_RENDERING.md).
+Ripes GUI demonstration and confirmation or replacement of the xPack compiler
+reference remain outstanding. This is a progress snapshot, not a declaration
+that every assignment requirement has been completed. No final submission
+tag has been created for it.
 
 ## Original baseline documentation
 

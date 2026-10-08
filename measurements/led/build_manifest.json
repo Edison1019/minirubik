@@ -1,0 +1,21 @@
+{
+  "input": "25314672313211",
+  "LED_MATRIX_0_BASE": "0xf0000000",
+  "width": 35,
+  "height": 25,
+  "validated_cases": [
+    "12345671111111",
+    "25314672313211",
+    "21345671111111",
+    "24316572122213"
+  ],
+  "validation": "actual RV32I ELF machine-code frame checker; GUI evidence separate",
+  "sha256": {
+    "solver_rv32i.s": "205d71626589ad39a5bbdbb4806c944a56d5f91b3009a11944059d8cdb7a6c13",
+    "led_renderer.inc": "013fae3ef407b8bffbec927d6cc4c8017556fff45be7d93bd58c21af6c4f1338",
+    "led_mapping.py": "268a708392c8ba977fd2fc95b07b36647aa4584f60f3aa04b86d07ce595df0d4",
+    "build_rv32i.py": "58ba06c9cdee411b58c7d5e065d7b09d01d705678b262a08dd30aaaa4dd8be17",
+    "solver_rv32i.elf": "d5f8449937b7dc775abf828ffb0eb699eb84a327817a2227809ec0d7330b47cb",
+    "solver_rv32i_led.elf": "36cb8ba310ffeb054e9d8b82dd751f51223aa8e08af26a6298488d0e4e9fd95f"
+  }
+}

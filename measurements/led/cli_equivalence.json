@@ -1,0 +1,10 @@
+{
+  "sections_identical": {
+    ".text": true,
+    ".rodata": true,
+    ".bss": true
+  },
+  "previous_sha256": "f4d1827c65dbd8a2aea37feb80dded7fa2efd5ce44c54a8de5011faee540803e",
+  "new_sha256": "d5f8449937b7dc775abf828ffb0eb699eb84a327817a2227809ec0d7330b47cb",
+  "note": "All loaded code and data identical with renderer disabled; ELF symbol metadata may differ."
+}
