@@ -14,8 +14,9 @@ The historical upstream explanation below describes that original baseline.
 
 The measured build disables the LED renderer. A GUI renderer and actual-path
 animation are implemented; see [LED setup and validation](LED_RENDERING.md).
-Ripes GUI demonstration and confirmation or replacement of the xPack compiler
-reference remain outstanding. This is a progress snapshot, not a declaration
+The LED GUI tests have been completed in Ripes for the solved, short-scramble,
+and distance-11 inputs. Confirmation or replacement of the xPack compiler
+reference remains outstanding. This is a progress snapshot, not a declaration
 that every assignment requirement has been completed. No final submission
 tag has been created for it.
 
