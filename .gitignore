@@ -3,3 +3,14 @@
 *.swp
 solver
 mini
+.tools/
+.build/
+__pycache__/
+*.elf
+*.exe
+check_h1
+check_h2
+verify_host_path
+assignment_requirements.md
+check_h3.c
+solver_rv32i_ripes.s
