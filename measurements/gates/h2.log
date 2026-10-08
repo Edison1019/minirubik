@@ -1,0 +1,29 @@
+H2 TABLE CHECK (independent cubie-model reference)
+
+ori_trans
+  Entries checked: 2187; invalid: 0; mismatches: 0
+  Maximum: 728 (expected 728)
+  Solved row R/B/D: 426/16/0 (expected 426/16/0): PASS
+  RESULT: PASS
+
+perm_trans
+  Entries checked: 15120; invalid: 0; mismatches: 0
+  Maximum: 5039 (expected 5039)
+  Solved row R/B/D: 1104/9/198 (expected 1104/9/198): PASS
+  RESULT: PASS
+
+pdb_orientation
+  Entries checked: 729; reference reached: 729
+  Unpopulated: 0; invalid: 0; mismatches: 0
+  Maximum: 6 (expected 6)
+  Solved entry: 0 (expected 0): PASS
+  RESULT: PASS
+
+pdb_permutation
+  Entries checked: 5040; reference reached: 5040
+  Unpopulated: 0; invalid: 0; mismatches: 0
+  Maximum: 7 (expected 7)
+  Solved entry: 0 (expected 0): PASS
+  RESULT: PASS
+
+H2 PASS
