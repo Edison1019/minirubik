@@ -1,14 +1,23 @@
 CC ?= cc
 CFLAGS ?= -O2 -std=c99 -Wall -Wextra -Wpedantic
 PYTHON ?= python3
+LED_BASE ?= 0xf0000000
+RV32_CC ?=
 FRAMA_C ?= frama-c
 VECTORS := tests/solutions.txt
 CLANG_FORMAT := $(shell command -v clang-format-20 2>/dev/null || command -v clang-format 2>/dev/null)
 C_SOURCES := $(wildcard *.c *.h)
 
-.PHONY: all check check-h3 prove prove-baseline clean indent
+.PHONY: all elf elf-led check check-h3 prove prove-baseline clean indent
 
 all: solver mini
+
+# Rebuild through the script so ELF section and static-data checks always run.
+elf:
+	$(PYTHON) build_rv32i.py $(if $(RV32_CC),--cc "$(RV32_CC)")
+
+elf-led:
+	$(PYTHON) build_rv32i.py --render --led-base $(LED_BASE) $(if $(RV32_CC),--cc "$(RV32_CC)")
 
 solver: solver.c pdb_tables.h
 	$(CC) $(CFLAGS) solver.c -o $@

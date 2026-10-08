@@ -1,5 +1,20 @@
 # Native checks and CI
 
+Assembly ELF builds are explicit targets; the default `make` still builds only
+the native C programs:
+
+```sh
+make elf
+make elf-led LED_BASE=0xf0000000
+```
+
+These call `build_rv32i.py` and retain its read-only table, RV32 ELF, and static
+data size checks. Set `LED_BASE` to the address shown in your Ripes I/O panel.
+The script discovers the cross compiler as before; optionally pass
+`RV32_CC="/path/to/compiler"`. On Windows, use `mingw32-make` with `PYTHON=python`
+and the Bash `SHELL` setting shown below. Edit `solver_rv32i.s` before rebuilding
+either ELF; these targets always rebuild from the current source.
+
 On Linux:
 
 ```sh
