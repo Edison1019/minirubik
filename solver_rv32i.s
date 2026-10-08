@@ -1,6 +1,8 @@
 # GNU/LLVM RV32I source: build an ELF before loading it in Ripes.
 # Tables and constants: .rodata (ALLOC, no WRITE); stack: .bss (ALLOC, WRITE).
 # build_rv32i.py also generates solver_rv32i_ripes.s for the built-in assembler.
+# Build-time switch: 0 = CLI measurement, 1 = LED GUI animation.
+.equ RENDER, 0
 .section .rodata, "a", @progbits
 
 # ============================================================
@@ -2424,6 +2426,11 @@ main_rank:
     addi    a2, sp, 16
     call    verify_solution
     beqz    a0, main_failure
+.if RENDER
+    mv      a0, sp
+    call    led_draw
+    call    led_delay
+.endif
     lw      s0, 36(sp)
     li      s1, 0
 main_print:
@@ -2442,6 +2449,16 @@ main_print_move:
     lw      a0, 0(t1)
     li      a7, 4
     ecall
+.if RENDER
+    addi    t0, sp, 16
+    add     t0, t0, s1
+    lbu     a1, 0(t0)
+    mv      a0, sp
+    call    led_apply_move
+    mv      a0, sp
+    call    led_draw
+    call    led_delay
+.endif
     addi    s1, s1, 1
     j       main_print
 main_newline:
@@ -2459,3 +2476,6 @@ main_exit:
     addi    sp, sp, 48
     li      a7, 93             # exit with status a0
     ecall
+.if RENDER
+.include "led_renderer.inc"
+.endif

@@ -14,3 +14,4 @@ verify_host_path
 assignment_requirements.md
 check_h3.c
 solver_rv32i_ripes.s
+solver_rv32i_led_ripes.s
