@@ -1,0 +1,10 @@
+{
+    "# instructions retired": 11660401,
+    "execution time (ms)": 625,
+    "runinfo": {
+        "ISA extensions": [
+        ],
+        "processor": "RV32_ISS",
+        "source file": "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\refinement\\branchless_max_21345671111111.elf"
+    }
+}

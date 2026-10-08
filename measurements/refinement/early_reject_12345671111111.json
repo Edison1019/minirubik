@@ -1,0 +1,10 @@
+{
+    "# instructions retired": 756,
+    "execution time (ms)": 1,
+    "runinfo": {
+        "ISA extensions": [
+        ],
+        "processor": "RV32_ISS",
+        "source file": "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\refinement\\early_reject_12345671111111.elf"
+    }
+}
