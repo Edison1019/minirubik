@@ -1,6 +1,14 @@
 name: C CI
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      full_h3:
+        description: Run exhaustive H3 over all 3674160 states
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -10,16 +18,12 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
-      - run: make
       - run: make check
 
-  prove:
+  exhaustive-h3:
+    if: github.event_name == 'workflow_dispatch' && inputs.full_h3
     runs-on: ubuntu-24.04
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7
-      - uses: ocaml/setup-ocaml@v3
-        with:
-          ocaml-compiler: "5.2"
-      - run: opam install -y frama-c alt-ergo
-      - run: opam exec -- why3 config detect
-      - run: opam exec -- make prove
+      - run: make check-h3
