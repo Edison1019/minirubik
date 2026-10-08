@@ -1,0 +1,25 @@
+{
+  "completed": 2644,
+  "expected": 2644,
+  "pass": true,
+  "failures": [],
+  "worst_case": {
+    "rank": 2437047,
+    "input": "54721631111111",
+    "iret": 29481006,
+    "milliseconds": 2119,
+    "path": "B2 R' B R' D' B R2 B R B D'",
+    "status": "pass"
+  },
+  "maximum_iret": 29481006,
+  "specified_vector": {
+    "rank": 524880,
+    "input": "21345671111111",
+    "iret": 10782338,
+    "milliseconds": 576,
+    "path": "R B' D2 R' B R' B' R D2 R B",
+    "status": "pass"
+  },
+  "source_unchanged": true,
+  "this_run_wall_seconds": 2370.895345211029
+}

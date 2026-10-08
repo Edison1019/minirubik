@@ -1,0 +1,13 @@
+{
+  "ripes": "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+  "ripes_sha256": "bd2ddea8cd6fcf6902cda7366fe99ab6dd0c7fdbbc7efcfdb89ede20acc67f0f",
+  "template_sha256": "f4d1827c65dbd8a2aea37feb80dded7fa2efd5ce44c54a8de5011faee540803e",
+  "source_sha256": "b67478a60da92ffee926ba14f33cd8396d6987d35eb05387e5e707317e541d98",
+  "baseline_sha256": "46e0a20861a3ccd60bdbd9f4a559547c2326c3ef0530ddd54bbfdcbaacdb1ab6",
+  "oracle_sha256": "83e2fe09f49361ab822c757cc195fb9c435932ffd56d836f89450a5d53187a76",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "processor": "RV32_ISS",
+  "renderer": "absent",
+  "threshold": 50000000,
+  "measurement_scope": "whole program, including verify and output"
+}
