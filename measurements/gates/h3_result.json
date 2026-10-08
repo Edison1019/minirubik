@@ -1,0 +1,68 @@
+{
+  "compiler": "gcc (x86_64-win32-seh-rev0, Built by MinGW-W64 project) 8.1.0",
+  "commands": [
+    [
+      "gcc",
+      "-O2",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-DSOLVER_NO_MAIN",
+      "-Werror",
+      "-c",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\solver.c",
+      "-o",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\h3\\solver.o"
+    ],
+    [
+      "gcc",
+      "-O2",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-Wno-sign-compare",
+      "-c",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\baseline_adapter.c",
+      "-o",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\h3\\baseline_adapter.o"
+    ],
+    [
+      "gcc",
+      "-O2",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-c",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\check_h3_full.c",
+      "-o",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\h3\\check_h3_full.o"
+    ],
+    [
+      "gcc",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\h3\\solver.o",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\h3\\baseline_adapter.o",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\h3\\check_h3_full.o",
+      "-o",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\h3\\check_h3_full.exe"
+    ]
+  ],
+  "sha256": {
+    "solver.c": "e8c48701d43dee7b67196f63b4f0ab5a7b37b046fe2e074c81d652ab8a33cb68",
+    "solver_baseline.c": "46e0a20861a3ccd60bdbd9f4a559547c2326c3ef0530ddd54bbfdcbaacdb1ab6",
+    "pdb_tables.h": "0e4844b6b99ce3d7188a8e83a684057a9cb09f0116e954b9970f237d4c39cde6",
+    "baseline_adapter.c": "fb92d69b52ce50a5c9e67dc4f045c8667fdaa553d40ecbec211db7de9dbe429b",
+    "baseline_adapter.h": "e982cd5f89ac36827ccf8417c9b686cb92fafcd44d70825a98df67730f506693",
+    "check_h3_full.c": "0a7245251fd3a0ae88c06d8610cf1b4b4df91bd335f8fff83e94075b7915f6a5",
+    "run_h3.py": "e1787af206c12959e271dbda328f2ec4310b74b6e6f4474b18fb1206b49b5e16"
+  },
+  "executable_sha256": "91fadd26ac14458fe948f4de4c1714992ba4880cce3b19d578ec5cc2a1f87f03",
+  "wall_seconds": 1098.6698751,
+  "exit_code": 0,
+  "source_files_unchanged": true,
+  "h3_pass": true
+}
