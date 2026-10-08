@@ -1,0 +1,612 @@
+{
+  "gcc": "riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) 15.2.0",
+  "gcc_target": "riscv-none-elf",
+  "flags": [
+    "-O2",
+    "-march=rv32i",
+    "-mabi=ilp32",
+    "-mno-relax",
+    "-msmall-data-limit=0"
+  ],
+  "exact_requested_executable_name": false,
+  "ripes": "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+  "ripes_sha256": "bd2ddea8cd6fcf6902cda7366fe99ab6dd0c7fdbbc7efcfdb89ede20acc67f0f",
+  "commands": [
+    [
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+      "-O2",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-mno-relax",
+      "-msmall-data-limit=0",
+      "-I",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\tests\\ripes_stdio",
+      "-Dmain=solver_reference_main",
+      "-c",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\solver.c",
+      "-o",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\solver.o"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+      "-O2",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-mno-relax",
+      "-msmall-data-limit=0",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-c",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\tests\\c_reference_runtime.c",
+      "-o",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\runtime.o"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+      "-O2",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-mno-relax",
+      "-msmall-data-limit=0",
+      "-nostdlib",
+      "-Wl,--no-relax",
+      "-Wl,--build-id=none",
+      "-Wl,-T,C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\tests\\c_reference.ld",
+      "-Wl,-Map,C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\solver_c.map",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\tests\\c_reference_start.s",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\solver.o",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\runtime.o",
+      "-lgcc",
+      "-o",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\solver_c.elf"
+    ],
+    [
+      "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\build_rv32i.py"
+    ],
+    [
+      "gcc",
+      "-O2",
+      "-std=c99",
+      "-Wno-sign-compare",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\baseline_adapter.c",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\tests\\export_distance11.c",
+      "-o",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\baseline_verifier.exe"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_C.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\12345671111111_C.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_assembly.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\12345671111111_assembly.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_C.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\62345713133111_C.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_assembly.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\62345713133111_assembly.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_C.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\24316572122213_C.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_assembly.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\24316572122213_assembly.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_C.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\25713642221111_C.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_assembly.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\25713642221111_assembly.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_C.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\24513763133333_C.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_assembly.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\24513763133333_assembly.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_C.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\43752611332133_C.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_assembly.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\43752611332133_assembly.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_C.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\25416373331111_C.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_assembly.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\25416373331111_assembly.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_C.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\21345671111111_C.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_assembly.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\21345671111111_assembly.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_C.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\25314672313211_C.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_assembly.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\25314672313211_assembly.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_C.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\54721631111111_C.json"
+    ],
+    [
+      "C:\\Users\\user\\Desktop\\Ripes-v2.2.6-106-g5b8a616-win-x86_64\\Ripes.exe",
+      "--mode",
+      "cli",
+      "--src",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_assembly.elf",
+      "-t",
+      "elf",
+      "--proc",
+      "RV32_ISS",
+      "--iret",
+      "--exectime",
+      "--json",
+      "--runinfo",
+      "--timeout",
+      "180000",
+      "--output",
+      "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\54721631111111_assembly.json"
+    ]
+  ],
+  "source_sha256": {
+    "solver.c": "e8c48701d43dee7b67196f63b4f0ab5a7b37b046fe2e074c81d652ab8a33cb68",
+    "pdb_tables.h": "0e4844b6b99ce3d7188a8e83a684057a9cb09f0116e954b9970f237d4c39cde6",
+    "solver_rv32i.s": "b67478a60da92ffee926ba14f33cd8396d6987d35eb05387e5e707317e541d98",
+    "tests/c_reference_runtime.c": "4a49080606fe0c8218b33e61c02c5b93804bbf1f7ed483782f2e098da4066325",
+    "tests/c_reference_start.s": "5f9122aa5743247381b83c13c2d0bb89797003a049bd46cff2a8302b7fd356ac",
+    "tests/c_reference.ld": "2a891d621068fbd081abf3d2790bcb50cc3aba6cc33bc1fda0e10c709b9e1ab8",
+    "tests/ripes_stdio/stdio.h": "6d12efc06e34e4c73271747358f35466d7905c0bbc88a063ff4bff6c077a66bf"
+  },
+  "sources_unchanged": true,
+  "text_bytes": {
+    "C": 2164,
+    "assembly": 1356
+  },
+  "cases": [
+    {
+      "input": "12345671111111",
+      "optimal_length": 0,
+      "C": {
+        "iret": 645,
+        "path": ""
+      },
+      "assembly": {
+        "iret": 756,
+        "path": ""
+      },
+      "assembly_reduction_percent": -17.209302325581397
+    },
+    {
+      "input": "62345713133111",
+      "optimal_length": 8,
+      "C": {
+        "iret": 81975,
+        "path": "R2 D B2 R' D R' D B'"
+      },
+      "assembly": {
+        "iret": 67162,
+        "path": "R2 D B2 R' D R' D B'"
+      },
+      "assembly_reduction_percent": 18.070143336383047
+    },
+    {
+      "input": "24316572122213",
+      "optimal_length": 8,
+      "C": {
+        "iret": 114219,
+        "path": "R' D' R2 B D' B2 D' R2"
+      },
+      "assembly": {
+        "iret": 93788,
+        "path": "R' D' R2 B D' B2 D' R2"
+      },
+      "assembly_reduction_percent": 17.8875668671587
+    },
+    {
+      "input": "25713642221111",
+      "optimal_length": 8,
+      "C": {
+        "iret": 48403,
+        "path": "R B2 R' D2 B R B2 R'"
+      },
+      "assembly": {
+        "iret": 39594,
+        "path": "R B2 R' D2 B R B2 R'"
+      },
+      "assembly_reduction_percent": 18.19928516827469
+    },
+    {
+      "input": "24513763133333",
+      "optimal_length": 9,
+      "C": {
+        "iret": 957042,
+        "path": "B' R2 B' R B2 D' R' D2 R'"
+      },
+      "assembly": {
+        "iret": 787593,
+        "path": "B' R2 B' R B2 D' R' D2 R'"
+      },
+      "assembly_reduction_percent": 17.705492548916347
+    },
+    {
+      "input": "43752611332133",
+      "optimal_length": 9,
+      "C": {
+        "iret": 337835,
+        "path": "R D2 R2 D R D2 B D' R2"
+      },
+      "assembly": {
+        "iret": 277642,
+        "path": "R D2 R2 D R D2 B D' R2"
+      },
+      "assembly_reduction_percent": 17.81727766513239
+    },
+    {
+      "input": "25416373331111",
+      "optimal_length": 10,
+      "C": {
+        "iret": 3496905,
+        "path": "R2 D R B2 R D' R D R' B2"
+      },
+      "assembly": {
+        "iret": 2878111,
+        "path": "R2 D R B2 R D' R D R' B2"
+      },
+      "assembly_reduction_percent": 17.695476428441726
+    },
+    {
+      "input": "21345671111111",
+      "optimal_length": 11,
+      "C": {
+        "iret": 13097556,
+        "path": "R B' D2 R' B R' B' R D2 R B"
+      },
+      "assembly": {
+        "iret": 10782338,
+        "path": "R B' D2 R' B R' B' R D2 R B"
+      },
+      "assembly_reduction_percent": 17.676717702142298
+    },
+    {
+      "input": "25314672313211",
+      "optimal_length": 1,
+      "C": {
+        "iret": 1284,
+        "path": "R'"
+      },
+      "assembly": {
+        "iret": 1067,
+        "path": "R'"
+      },
+      "assembly_reduction_percent": 16.90031152647975
+    },
+    {
+      "input": "54721631111111",
+      "optimal_length": 11,
+      "C": {
+        "iret": 35807403,
+        "path": "B2 R' B R' D' B R2 B R B D'"
+      },
+      "assembly": {
+        "iret": 29481006,
+        "path": "B2 R' B R' D' B R2 B R B D'"
+      },
+      "assembly_reduction_percent": 17.66784650648917
+    }
+  ],
+  "scope": "whole-program; C includes Ripes adapter and RV32I libgcc helpers",
+  "libgcc_helpers": [
+    "__divsi3",
+    "__hidden___udivsi3",
+    "__modsi3",
+    "__mulsi3",
+    "__umodsi3"
+  ]
+}

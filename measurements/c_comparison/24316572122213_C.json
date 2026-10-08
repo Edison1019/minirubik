@@ -1,0 +1,10 @@
+{
+    "# instructions retired": 114219,
+    "execution time (ms)": 9,
+    "runinfo": {
+        "ISA extensions": [
+        ],
+        "processor": "RV32_ISS",
+        "source file": "C:\\Users\\user\\Desktop\\Computer Architecture\\Assignment 1\\.build\\c_comparison\\current_C.elf"
+    }
+}
