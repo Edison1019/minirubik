@@ -1,5 +1,24 @@
 # minirubik
 
+## Assignment fork: current solver
+
+This fork's `solver.c` uses non-recursive IDA* and four small read-only tables;
+the original full-BFS implementation is preserved in `solver_baseline.c`.
+The historical upstream explanation below describes that original baseline.
+
+- Native build and validation: `make check` ([CI details](CI_CHECKS.md)).
+- Full-domain C optimality: `make check-h3` ([H3 details](H3_CHECK.md)).
+- RV32I ELF: `python build_rv32i.py` ([toolchain and Ripes instructions](RV32I_BUILD.md)).
+- Measurement evidence: [measurements/](measurements/).
+- English assignment note: [HackMD](https://hackmd.io/@EdisonTsai/Byf8nleqzl).
+
+The measured version has no LED renderer. LED visualization and confirmation
+or replacement of the xPack compiler reference remain outstanding; this push
+is a progress snapshot, not a declaration that every assignment requirement
+has been completed. No final submission tag has been created for it.
+
+## Original baseline documentation
+
 An optimal C99 solver for the 2×2×2 Rubik’s Cube. It builds a breadth-first
 table for all 3,674,160 states and solves every valid position in at most 11
 half-turn-metric moves.
