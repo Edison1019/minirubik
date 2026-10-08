@@ -10,7 +10,6 @@ The historical upstream explanation below describes that original baseline.
 - Full-domain C optimality: `make check-h3` ([H3 details](H3_CHECK.md)).
 - RV32I ELF: `python build_rv32i.py` ([toolchain and Ripes instructions](RV32I_BUILD.md)).
 - Measurement evidence: [measurements/](measurements/).
-- Assembly refinement experiments: [method and results](ASSEMBLY_REFINEMENT.md).
 - English assignment note: [HackMD](https://hackmd.io/@EdisonTsai/Byf8nleqzl).
 
 The measured build disables the LED renderer. A GUI renderer and actual-path
